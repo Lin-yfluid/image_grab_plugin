@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>本地夹具 · 商品详情</title>
+    <style>
+      body { font-family: sans-serif; margin: 24px; }
+      .hero { width: 200px; height: 160px; background-image: url("./bg-hero.png"); background-size: cover; }
+      img { margin: 8px; }
+    </style>
+  </head>
+  <body>
+    <h1>测试商品详情页</h1>
+    <p>用于验证提取：大图应保留，logo / 16px 图标 / 1x1 应被过滤。</p>
+    <img src="./product-a.png" width="240" height="240" alt="主图" />
+    <img srcset="./product-b.png 320w, ./product-a.png 240w" sizes="320px" alt="srcset 图" />
+    <img data-src="./lazy-main.png" width="260" height="260" alt="懒加载" />
+    <img data-lazy-src="./product-c.png" alt="data-lazy-src" />
+    <div class="hero" style="background-image: url('./bg-hero.png')"></div>
+    <img src="./tiny-icon.png" width="16" height="16" alt="图标" />
+    <img src="./pixel.png" width="1" height="1" alt="像素" />
+    <img src="./logo.png" width="32" height="32" alt="logo" />
+  </body>
+</html>

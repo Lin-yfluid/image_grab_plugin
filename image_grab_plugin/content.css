@@ -1,0 +1,54 @@
+/* 详情页右下角悬浮按钮，避免挡住常见客服/购物车浮层 */
+#igp-grab-btn {
+  position: fixed;
+  right: 24px;
+  bottom: 88px;
+  z-index: 2147483000;
+  margin: 0;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #ff6b2c 0%, #ff3d00 100%);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(255, 61, 0, 0.35);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, filter 0.18s ease;
+}
+
+#igp-grab-btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.06);
+  box-shadow: 0 12px 28px rgba(255, 61, 0, 0.45);
+}
+
+#igp-grab-btn:active {
+  transform: translateY(0);
+  filter: brightness(0.96);
+}
+
+#igp-grab-btn:disabled {
+  cursor: wait;
+  filter: grayscale(0.2);
+  opacity: 0.85;
+}
+
+#igp-grab-toast {
+  position: fixed;
+  right: 24px;
+  bottom: 140px;
+  z-index: 2147483001;
+  max-width: 240px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: rgba(33, 37, 41, 0.92);
+  color: #fff;
+  font-size: 13px;
+  font-family: "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+}

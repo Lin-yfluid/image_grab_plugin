@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>商品图片提取结果</title>
+    <link rel="stylesheet" href="gallery.css" />
+  </head>
+  <body>
+    <header class="bar">
+      <div class="bar-left">
+        <h1>商品图片</h1>
+        <p id="sourceMeta" class="meta">正在载入…</p>
+      </div>
+      <div class="bar-actions">
+        <span id="selectedCount" class="count">已选 0 / 0</span>
+        <button type="button" id="btnAll" class="ghost">全选</button>
+        <button type="button" id="btnInvert" class="ghost">反选</button>
+        <button type="button" id="btnDownload" class="primary">下载选中</button>
+      </div>
+    </header>
+    <main>
+      <p id="empty" class="empty" hidden>暂无图片。请先在商品详情页点击右下角「获取图片」。</p>
+      <section id="grid" class="grid" aria-live="polite"></section>
+    </main>
+    <div id="overlay" class="overlay" hidden>
+      <div class="panel">
+        <h2 id="overlayTitle">正在下载</h2>
+        <div class="progress-track">
+          <div id="progressBar" class="progress-bar"></div>
+        </div>
+        <p id="overlayText">准备中…</p>
+      </div>
+    </div>
+    <script src="gallery.js"></script>
+  </body>
+</html>

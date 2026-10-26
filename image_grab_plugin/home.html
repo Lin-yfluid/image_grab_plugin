@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>电商图片提取下载</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow">Chrome 扩展 · Manifest V3</p>
+        <h1>电商图片提取下载</h1>
+        <p class="lead">
+          在淘宝、京东、拼多多的商品详情页与商家后台，一键提取商品图，勾选后批量保存为 PNG。
+        </p>
+        <div class="hero-tags">
+          <span>淘宝 / 天猫</span>
+          <span>京东</span>
+          <span>拼多多商家版</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2>能做什么</h2>
+        <div class="cards">
+          <article>
+            <h3>悬浮提取</h3>
+            <p>仅在商品页右下角显示「获取图片」，扫描 img、srcset、懒加载属性与背景图。</p>
+          </article>
+          <article>
+            <h3>智能过滤</h3>
+            <p>自动去掉图标、Logo、占位图和小于 100×100 的图片，相对路径补全并去重。</p>
+          </article>
+          <article>
+            <h3>勾选下载</h3>
+            <p>新标签页网格预览，支持全选 / 反选，统一转为 PNG，文件名如 商品图_001.png。</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>安装步骤</h2>
+        <ol class="steps">
+          <li>打开 Chrome，访问 <code>chrome://extensions</code></li>
+          <li>右上角开启「开发者模式」</li>
+          <li>点击「加载已解压的扩展程序」，选择本插件文件夹</li>
+          <li>工具栏出现橙色相机图标后即可使用</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>使用流程</h2>
+        <ol class="steps">
+          <li>打开淘宝 / 京东 / 拼多多商品详情或商家商品页</li>
+          <li>点击页面右下角「获取图片」</li>
+          <li>在弹出的图库中勾选需要的图片</li>
+          <li>点击「下载选中」，等待进度完成</li>
+        </ol>
+      </section>
+
+      <section class="note">
+        <p>
+          点击浏览器工具栏中的本扩展图标，随时回到本介绍页。本地调试可打开
+          <code>http://127.0.0.1:8765/product.html</code> 夹具页。
+        </p>
+      </section>
+    </main>
+    <footer>电商图片提取下载 · 仅供个人整理商品素材使用</footer>
+    <script src="home.js"></script>
+  </body>
+</html>
